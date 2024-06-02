@@ -1,0 +1,65 @@
+pseudo-classes;
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="style.css">
+
+<a href="https://www.google.com" target="_blank">
+	Google
+</a>
+
+<ul>
+	<li>This is #1</li>
+	<li>This is #2</li>
+	<li>This is #2</li>
+	<li>This is #4</li>
+	<li>This is #5</li>
+	<li>This is #6</li>
+</ul>
+
+<div id="greeting">Hover here
+	<p>Hello</p>
+</div>
+
+</body>
+</html>
+
+
+style.css
+
+a:link{
+    color: yellowgreen;
+}
+a:hover {
+    color: aqua;
+    font-size: 1.1em;
+}
+a:active{
+    color: blue;
+    font-size: 1.1em;
+}
+a:visited{
+    color: grey;
+}
+
+li:hover{
+    background-color: yellow;
+}
+li:not(:hover){
+    background-color: bisque;
+}
+
+li:nth-child(2n+1){
+    background-color: violet;
+}
+#greeting p{
+    color: aliceblue;
+    background-color: brown;
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}
